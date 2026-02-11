@@ -315,6 +315,11 @@ h3 {
     transform: scale(1.1);
 }
 
+.swiper-slide img.focus-left {
+    object-position: 25% center;
+    /* Adjusts focus to the left side */
+}
+
 /* Custom Swiper Pagination & Navigation */
 .swiper-pagination-bullet {
     background: var(--accent-color);
@@ -376,6 +381,12 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+
+    /* Fix for mobile image cropping to show faces */
+    .quote-bg img {
+        object-position: 25% center;
+    }
+
     .main-title {
         font-size: 2.2rem;
         /* reduced from 2.5rem */
